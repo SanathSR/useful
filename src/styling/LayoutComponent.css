@@ -1,0 +1,21 @@
+/* Wrapper uses flex column, min height 100vh */
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Main content fills the remaining space between header and footer */
+.layout-content {
+  flex: 1 0 auto;
+  /* padding: 1rem; */
+  overflow-y: auto;
+  margin-top: 0; /* no margin needed */
+  /* Make sure main doesn't go under sticky header */
+  /* Sticky header is out of document flow, so content scrolls under it */
+  /* To avoid that, you can add padding-top equal to header height */
+  /* padding-top: 60px; */
+  /* Add padding-bottom equal to footer height to avoid content behind footer */
+  /* padding-bottom: 60px; */
+}

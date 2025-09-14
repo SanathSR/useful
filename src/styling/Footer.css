@@ -1,0 +1,32 @@
+/* Custom styles for the footer */
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  /* padding: 20px 0; */
+  height: 60px;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-container .footer-icon {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-container .footer-icon:hover {
+  color: #007bff;
+}
+
+.footer-container p {
+  font-size: 14px;
+}
